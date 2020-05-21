@@ -1,3 +1,4 @@
+/* soft reset do css */
 * {
   margin: 0;
   padding: 0;
@@ -5,40 +6,245 @@
 }
 
 body {
-  background-image: url('http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
+  background-color: rgb(229, 222, 243);
   background-size: auto 100vh; 
-  font-family: Arial;
+  font-family: 'Source Code Pro', monospace;
   height: 100vh;
+  font-size: 12px;
 }
 
-.menu {
-  background-color: white;
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: right;
+  align-items: right;
 }
+
+.bg-light {
+  background-color: white;
+  box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
+  position: fixed;
+  width: 100vw;
+  padding-top: 1em;
+  z-index: 1;
+}
+
 
 .menu ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-right: 5em;
 }
 
 .menu li {
  list-style: none; 
 }
 
-a {
-  color: teal;
-  text-decoration: none;
+.bg-light .menu-link {
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 1s, color 1s;
 }
 
-a:hover {
+.bg-light .menu-link:active,
+.bg-light .menu-link:hover {
+  background-color: #e47aff;
+  color: white;
+}
+
+/* .bg-light .navbar-toggler:active,
+.bg-light .navbar-toggler:focus {
+  border-color: #e47aff;
+} */
+
+.menu-link {
+  color: mediumpurple;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu-link:hover {
   text-decoration: underline;
 }
 
-.site-subtitle, 
+.logo {
+  width: 6em;
+}
+
+.titulo h1 {
+  margin-top: 15%;
+  margin-left: 5%;
+  max-width: 650px;
+  position: absolute;
+}
+
+.site-title:after{
+  color: rgb(22, 22, 22);
+  content: '|';
+  opacity: 1;
+  animation: pisca .7s infinite;
+ 
+}
+
 .site-title {
-  color: whitesmoke;
+  font-size: 2.5em;
+  font-family: 'Special Elite', cursive;
+}
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.perfil img {
+  width: 35%;
+  padding-top: 10%;
+  margin-left: 40em;
+}
+
+/* .fundo, .titulo {
+  box-sizing: border-box;
+} */
+.sobre,
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+}
+
+/* .terceiro-p {
+   margin-left: 18em;
+  } */
+
+.sobre h2,
+.contato h2,
+.portfolio h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: mediumpurple;
+  font-size: 2em;
+  padding: 2em;
+}
+
+.sobre p {
+  text-indent: 1.2em;
+  margin-bottom: 1.4em;
+  text-align: justify;
+}
+
+.avatar-dev img {
+  max-width: 20em;
+}
+
+.avatar-criative img {
+  max-width: 16em;
+}
+
+.sobre .avatar-dev img {
+  float: right;
+  margin-left: 3em;
+  
+}
+
+.sobre .avatar-criative {
+  float: left;
+  margin-right: 3em;
+ 
+}
+
+.desenhos figure {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-desenho {
+  margin-top: -100px;
+  width: 100%;
+  height: 12em;
+  object-fit: cover;
+  border: 7px solid rgb(171, 143, 226);
+  border-radius: 0%;
+  box-shadow: none;
+}
+
+/* .quarto-p {
+  left: 12%;
+} */
+
+.contato {
+  min-height: 90vh;
+}
+
+.portfolio, .sobre {
+  position: relative;
+}
+
+.portfolio:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/fundo.jpg');
+  width: 100%;
+  height: 100%;
+  opacity : 0.1;
+  z-index: -1;
+}
+
+.desenhos .grid {
+  display: grid;
+  gap: 1em;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 1em;
+}
+
+.portfolio figure {
+  margin-bottom: 0;
+}
+
+.portfolio figure:hover {
+  -webkit-transform: scale(1.4);
+  transition: 1s;
+  object-fit: none;
+}
+
+.portfolio figcaption {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0, 0, 0, 0.835);
+}
+
+.desenhos ,
+.portfolio figure {
   text-align: center;
 }
 
-.site-subtitle {
- font-style: italic;
+.img-portfolio {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: 0 30px 60px rgba(47, 46, 46, 0.5);
+}
+
+.contato .icons {
+  text-align: center;
+}
+
+.contato a {
+  color: mediumpurple;
+  font-size: 4em;
+  transition: text-shadow 1s;
+    text-decoration: none;
+}
+
+.contato a:active,
+.contato a:hover  {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(128, 225, 255, 0.794);
 }

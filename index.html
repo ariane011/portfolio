@@ -1,21 +1,120 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ariane G. Sousa</title>
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Special+Elite&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-  <header>
-		<nav class="menu">
-			<ul>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Portfólio</a></li>
-				<li><a href="#">Contato</a></li>
+	<header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+		<a class="navbar-brand" href="#"><img class="logo" src="./img/logo.svg" alt="logo ariane" /></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<ul class="navbar-nav">
+				<li><a class="menu-link" href="#sobre">SOBRE</a></li>
+				<li><a class="menu-link" href="#portfolio">PORTFÓLIO</a></li>
+				<li><a class="menu-link" href="#contato">CONTATO</a></li>
 			</ul>
-		</nav>
-		<h1 class="site-title">Ariane G. Sousa</h1>
-		<h2 class="site-subtitle">Front-End Developer Jr.</h2>
-  </header>
+		</div>
+	</nav>
+	<div class="titulo">
+		<h1 class="site-title">Olá! :) Meu nome é Ariane e sou desenvolvedora front-end.</h1>
+	</div>
+	<div class="perfil">
+		<img src="./img/fundo-perfil.png" alt="foto-perfil" />
+	</div>
+</header>
+	<section class="sobre container" id="sobre">
+		<h2>Sobre mim</h2>
+		<figure class="avatar-dev">
+			<img src="./img/dev_focus.svg" alt="Ilustração mulher usando computador">
+		</figure>
+		<p>
+			Tenho 27 anos, sou formada em Gestão da Tecnologia da Informação pela Fatec de Itaquaquecetuba e sou entusiasta por desenvolvimento Front-end e Design.
+		</p>
+		<figure class="avatar-criative">
+			<img src="./img/creative.svg" alt="Ilustração mulher pintando quadro">
+		</figure>
+		<p>
+			Gosto de desenhar, pintar telas, gosto de viajar e vivenciar a cultura e arquitetura dos lugares, 
+			fotografar e ver o mundo com uma perspectiva diferente.
+		</p>
+		<p class="terceiro-p">
+			No meu tempo livre gosto de ver filmes e séries medievais, ficção cientifica, suspense psicológico e drama. 
+			Uma das séries que mais gosto é Friends ❤
+		</p>
+		<br>
+		<p class="quarto-p">
+			Algumas das minhas artes no <a href="https://www.deviantart.com/ariane011/gallery" target="_blank">DeviantArt</a>:
+		</p>
+		<div class="desenhos">
+		<div class="grid">
+			<figure>
+				<a href="https://www.deviantart.com/ariane011/gallery" target="blank"><img class="img-desenho" src="./img/leia.jpg" alt="Desenho da Leia"></a>
+			</figure>
+			<figure>
+				<a href="https://www.deviantart.com/ariane011/gallery" target="blank"><img class="img-desenho" src="./img/gisele.jpg" alt="Desenho da Gisele"></a>
+			</figure>
+			<figure>
+			<a href="https://www.deviantart.com/ariane011/gallery" target="blank"><img	class="img-desenho" src="./img/logan.jpg" alt="Desenho do logan"></a>
+			</figure>
+		</div>
+		</div>
+	</section>
+	<section class="portfolio" id="portfolio">
+		<h2>Portfólio</h2>
+		<!-- <img src="./img/rocket.svg" /> -->
+		<div class="grid">
+			<figure>
+				<a href="https://cv-speed-hiring.netlify.app/" target="blank"><img class="img-portfolio" src="./img/ch.png" alt="Collective Hiring"></a>
+				<figcaption>Collective Hiring</figcaption>
+			</figure>
+			<figure>
+				<a href="https://lovepets.netlify.app/" target="blank"><img class="img-portfolio" src="./img/lovepets.png" alt="Love Pets"></a>
+				<figcaption>Love Pets</figcaption>
+			</figure>
+			<figure>
+				<a href="http://www.rjcg-tubulacoes.com.br/" target="blank"><img class="img-portfolio" src="./img/rjcg.png" alt="RJCG - Tubulações"></a>
+				<figcaption>RJCG - Tubulações</figcaption>
+			</figure>
+		</div>
+	</section>
+	<section class="contato" id="contato">
+		<h2>Contato</h2>
+		<div class="grid icons">
+			<a target="blank" href="https://github.com/ariane011">
+				<i class="fab fa-github-alt"></i>
+			</a>
+			<a target="blank" href="https://linkedin.com/in/ariane-g-sousa/">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<a target="blank" href="https://instagram.com/ariane.gsousa">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="mailto:ariane.sousa011@gmail.com">
+				<i class="fas fa-envelope"></i>
+			</a>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (max-width: 414px) {
+  body {
+    font-size: 14px;
+  }
+  .titulo {
+    padding-top: 20%;
+    max-width: 200px;
+    max-height: 50px;
+    font-size: 0.9em;
+  }
+
+  .perfil img {
+    position: relative;
+    padding: 0%;
+    margin: 300px 0 0 30px;
+    width: 20em;
+  }
+
+  .desenhos {
+    margin-top: 15%;
+  }
+  .desenhos img {
+    margin: 0;
+  }
+
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+  .desenhos .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+/* Ajustar tela até 640 e 736 e 812 e 768 */
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+} 
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+  .desenhos .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .logo {
+    margin-right: 33em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+}
