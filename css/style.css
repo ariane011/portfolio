@@ -21,7 +21,7 @@ header {
 }
 
 .bg-light {
-  background-color: white;
+  background-color: white !important;
   box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
   position: fixed;
   width: 100vw;
@@ -122,7 +122,7 @@ header {
 .sobre h2,
 .contato h2,
 .portfolio h2 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Lobster Two', cursive;
   color: mediumpurple;
   font-size: 2em;
   padding: 2em;
