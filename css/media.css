@@ -23,7 +23,6 @@
   .desenhos img {
     margin: 0;
   }
-
 }
 
 @media (min-width: 560px) {
@@ -42,7 +41,7 @@
   body {
     font-size: 18px;
   }
-} 
+}
 
 @media (min-width: 880px) {
   .portfolio .grid {
