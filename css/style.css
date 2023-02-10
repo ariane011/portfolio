@@ -91,18 +91,22 @@ header a {
 }
 
 .sobre h2 {
-  padding: 100px 0px 2px 0px;
+  font-weight: 700;
 }
 
 .sobre hr {
-  width: 75px;
-  height: 7px;
-  padding-bottom: 30px;
+  background-color: whitesmoke !important;
+  color: whitesmoke !important;
+  border: solid 2px whitesmoke !important;
+  height: 5px !important;
+  width: 75px !important;
   color: whitesmoke;
+  margin-bottom: 50px;
 }
 
 .avatar-dev img {
-  max-width: 20em;
+  border-radius: 50%;
+  max-width: 15em;
 }
 
 .avatar-criative img {
@@ -111,13 +115,16 @@ header a {
 .sobre {
   display: flex;
   background-color: #3e464c;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 .container {
   display: contents;
 }
 .sobre .avatar-dev img {
   float: right;
-  margin-left: 3em;
 }
 
 .sobre .avatar-criative {
