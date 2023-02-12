@@ -27,7 +27,7 @@ header a {
   margin-top: 30px;
 }
 
-.navbar-toggler button {
+.navbar-toggler {
   background-color: white;
 }
 
@@ -35,6 +35,11 @@ header a {
   margin: 0px 15px 0px 15px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a:active {
+  color: white;
 }
 
 .titulo {
@@ -109,7 +114,7 @@ hr {
   height: 5px !important;
   width: 75px !important;
   color: whitesmoke;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
   margin-left: 82px;
 }
 
@@ -122,16 +127,13 @@ hr {
   max-width: 16em;
 }
 .sobre {
-  display: flex;
   background-color: #3e464c;
   padding: 50px;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
-.container {
-  display: contents;
-}
+
 .sobre .avatar-dev img {
   float: right;
 }
@@ -147,7 +149,7 @@ hr {
 }
 
 .contato {
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: #212121;
 }
 
@@ -176,21 +178,18 @@ hr {
   background-color: #273238;
 }
 
-/* .desenhos .grid {
-  display: grid;
-  gap: 1em;
-} */
-
 .projetos .grid {
   display: grid;
-  /* display: flex;
-  justify-content: center; */
+  gap: 1em;
+}
+
+.sobre .grid {
+  display: grid;
   gap: 1em;
 }
 
 .projetos figure {
   margin-bottom: 0;
-  /* width: fit-content; */
   border-radius: 5px;
   padding: 8px;
 }
