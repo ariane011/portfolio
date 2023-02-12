@@ -27,6 +27,10 @@ header a {
   margin-top: 30px;
 }
 
+.navbar-toggler button {
+  background-color: white;
+}
+
 .navbar-nav li {
   margin: 0px 15px 0px 15px;
   font-family: "Roboto", sans-serif;
@@ -81,7 +85,7 @@ header a {
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 2em;
-  padding: 2em;
+  padding: 2em 2em 0em 2em;
 }
 
 .sobre p {
@@ -95,6 +99,10 @@ header a {
 }
 
 .sobre hr {
+  margin-left: 0px;
+}
+
+hr {
   background-color: whitesmoke !important;
   color: whitesmoke !important;
   border: solid 2px whitesmoke !important;
@@ -102,6 +110,7 @@ header a {
   width: 75px !important;
   color: whitesmoke;
   margin-bottom: 50px;
+  margin-left: 82px;
 }
 
 .avatar-dev img {
@@ -139,6 +148,15 @@ header a {
 
 .contato {
   min-height: 90vh;
+  background-color: #212121;
+}
+
+.contato p {
+  color: white;
+  padding-top: 250px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
 }
 
 .projetos,
@@ -152,21 +170,29 @@ header a {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../img/fundo.jpg");
   width: 100%;
   height: 100%;
-  opacity: 0.1;
   z-index: -1;
+  background-color: #273238;
 }
 
-.desenhos .grid {
+/* .desenhos .grid {
   display: grid;
   gap: 1em;
-}
+} */
 
 .projetos .grid {
   display: grid;
+  /* display: flex;
+  justify-content: center; */
   gap: 1em;
+}
+
+.projetos figure {
+  margin-bottom: 0;
+  /* width: fit-content; */
+  border-radius: 5px;
+  padding: 8px;
 }
 
 .projetos figure {
@@ -174,9 +200,10 @@ header a {
 }
 
 .projetos figure:hover {
-  -webkit-transform: scale(1.4);
+  -webkit-transform: scale(1.1);
   transition: 1s;
   object-fit: none;
+  box-shadow: 0px 0px 10px rgba(128, 225, 255, 0.794);
 }
 
 .projetos figcaption {
@@ -192,7 +219,7 @@ header a {
   height: 180px;
   width: 100%;
   object-fit: cover;
-  border-radius: 5%;
+  border-radius: 5px;
   box-shadow: 0 30px 60px rgba(47, 46, 46, 0.5);
 }
 
@@ -201,10 +228,11 @@ header a {
 }
 
 .contato a {
-  color: mediumpurple;
+  color: white;
   font-size: 4em;
   transition: text-shadow 1s;
   text-decoration: none;
+  padding: 10px;
 }
 
 .contato a:active,
