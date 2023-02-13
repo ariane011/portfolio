@@ -1,5 +1,5 @@
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
-@media (max-width: 840px) {
+@media (max-width: 1200px) {
   body {
     font-size: 14px;
   }
@@ -11,12 +11,14 @@
     width: auto;
   }
 
-  .sobre-text {
-    display: contents;
-  }
-
   .avatar-dev img {
     display: flex;
+  }
+}
+
+@media (max-width: 840px) {
+  .sobre-text {
+    display: contents;
   }
 }
 
@@ -35,9 +37,10 @@
   }
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1098px) {
   .projetos .grid {
-    grid-template-columns: repeat(3, 310px);
+    grid-template-columns: repeat(3, 350px);
+    height: 250px;
     align-content: center;
     justify-content: center;
   }
