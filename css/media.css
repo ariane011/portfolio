@@ -37,7 +37,7 @@
 
 @media (min-width: 880px) {
   .projetos .grid {
-    grid-template-columns: repeat(3, 260px);
+    grid-template-columns: repeat(3, 310px);
     align-content: center;
     justify-content: center;
   }

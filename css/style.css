@@ -94,7 +94,6 @@ header a {
 }
 
 .sobre p {
-  text-indent: 1.2em;
   margin-bottom: 1.4em;
   text-align: justify;
 }
@@ -149,16 +148,20 @@ hr {
 }
 
 .contato {
-  min-height: 100vh;
   background-color: #212121;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
-.contato p {
+.text-contato {
   color: white;
-  padding-top: 250px;
+  text-align: center;
   font-size: 14px;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  text-align: center;
 }
 
 .projetos,
@@ -192,30 +195,18 @@ hr {
   margin-bottom: 0;
   border-radius: 5px;
   padding: 8px;
-}
-
-.projetos figure {
-  margin-bottom: 0;
+  text-align: center;
 }
 
 .projetos figure:hover {
   -webkit-transform: scale(1.1);
-  transition: 1s;
+  transition: 0.8s;
   object-fit: none;
   box-shadow: 0px 0px 10px rgba(128, 225, 255, 0.794);
 }
 
-.projetos figcaption {
-  font-family: "Roboto", sans-serif;
-  color: rgba(0, 0, 0, 0.835);
-}
-
-.projetos figure {
-  text-align: center;
-}
-
 .img-projetos {
-  height: 180px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
