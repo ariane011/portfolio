@@ -53,10 +53,10 @@ header a {
 }
 
 .titulo h1 {
-  font-family: "Sawarabi Gothic";
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
+  font-weight: 800;
+  font-size: 68px;
   line-height: 43px;
 }
 
@@ -66,9 +66,29 @@ header a {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+.title,
+.title-h2,
+.title-p {
+  background-image: linear-gradient(
+    to right top,
+    #a786d9,
+    #8d91e5,
+    #6f9bec,
+    #4ba3ee,
+    #12abeb
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
 .titulo p {
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: 700;
   font-size: 24px;
 }
 
@@ -235,7 +255,7 @@ hr {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 1.5s all ease;
 }
 
 .reveal.active {
@@ -265,14 +285,20 @@ body {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
-  background: #2b343a;
-  padding: 0 10%;
+  padding: 0 20%;
   border-radius: 2px;
 }
 .cd-container::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.cd-timeline-h2 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 2em;
+  padding: 2em 2em 0em 2em;
 }
 
 /* --------------------------------
@@ -290,9 +316,9 @@ Main components
 #experiencia::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 25px;
-  height: 100%;
+  height: 80%;
   width: 3.5px;
   background: #7e57c2;
 }
@@ -382,12 +408,11 @@ Main components
   background: #40484d;
   border-radius: 2px;
   display: flex;
-  padding: 2px 10px;
+  padding: 2px 3px;
   color: rgba(255, 255, 255, 0.7);
   margin: 3px 2px;
   align-items: flex-start;
   justify-content: flex-start;
-  /* flex-grow: 1; */
   width: 30;
 }
 
