@@ -1,13 +1,17 @@
-function typeWrite(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = ' ';
-    textoArray.forEach(function (letra, i) {
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
 
-        setTimeout(function () {
-            elemento.innerHTML += letra;
-        }, 85 * i)
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
 
-    });
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
 }
-const titulo = document.querySelector('.site-title', '.site-subtitle');
-typeWrite(titulo);
+
+window.addEventListener("scroll", reveal);
