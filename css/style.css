@@ -183,6 +183,7 @@ hr {
   text-align: center;
 }
 
+.skills,
 .projetos,
 .sobre {
   position: relative;
@@ -525,9 +526,19 @@ Main components
 
 .skills {
   min-height: 110vh;
-  display: flex;
   background-color: #3e464c;
   padding: 5%;
+  color: white;
+  font-weight: 500;
+  font-family: "Roboto";
+  width: 100%;
+}
+
+.skills .content-chart {
+  margin-bottom: 0;
+  border-radius: 5px;
+  padding: 40px;
+  text-align: center;
 }
 
 @property --p {
@@ -593,4 +604,12 @@ Main components
   from {
     --p: 0;
   }
+}
+
+.container-chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
 }
