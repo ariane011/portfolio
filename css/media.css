@@ -67,3 +67,100 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .cd-timeline-content h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  .cd-timeline-content p {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .cd-timeline-content .cd-read-more,
+  .cd-timeline-content .cd-date {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-timeline-content {
+    color: white;
+    margin-left: 0;
+    padding: 1.6em;
+    width: 36%;
+    margin: 0 5%;
+  }
+  .cd-timeline-content::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #333c42;
+  }
+  .cd-timeline-content .cd-date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content {
+    float: right;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: #333c42;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+    float: right;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline-img {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: 10px;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  #experiencia {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  #experiencia::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container-colors {
+    display: grid;
+  }
+  .container-colors h2 {
+    font-size: 26px;
+  }
+  .container-colors p {
+    font-size: 14px;
+  }
+  .container-left,
+  .container-right {
+    width: auto;
+  }
+}
