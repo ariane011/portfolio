@@ -304,8 +304,13 @@ hr {
   animation: fade-left 0.7s ease-in;
 }
 
-.active.fade-right {
+.active.fade-right.animate {
   animation: fade-right 0.7s ease-in;
+}
+
+.active.fade-bottom-pie {
+  /* animation: fade-bottom 0.7s ease-in; */
+  animation: p 1s 0.5s both;
 }
 
 @keyframes fade-left {
@@ -341,6 +346,17 @@ hr {
   }
 }
 
+@keyframes fade-bottom-pie {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 html,
 body {
   background-color: #222c32;
@@ -365,7 +381,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 2em;
-  padding: 2em 2em 0em 2em;
+  padding: 0.5em 2em 0em 2em;
 }
 
 /* --------------------------------
@@ -551,7 +567,6 @@ Main components
   --b: 22px;
   --c: darkred;
   --w: 150px;
-
   width: var(--w);
   aspect-ratio: 1;
   position: relative;
@@ -590,9 +605,11 @@ Main components
   transform: rotate(calc(var(--p) * 3.6deg))
     translateY(calc(50% - var(--w) / 2));
 }
+
 .animate {
   animation: p 1s 0.5s both;
 }
+
 .no-round:before {
   background-size: 0 0, auto;
 }
