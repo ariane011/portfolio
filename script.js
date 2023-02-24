@@ -15,3 +15,18 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+var isVisible = false;
+$("#btnscrollToTop").click(function () {
+  $(window).scrollTop(0);
+});
+$(window).scroll(function () {
+  var shouldBeVisible = $(window).scrollTop() > 500;
+  if (shouldBeVisible && !isVisible) {
+    isVisible = true;
+    $("#btnscrollToTop").show();
+  } else if (isVisible && !shouldBeVisible) {
+    isVisible = false;
+    $("#btnscrollToTop").hide();
+  }
+});

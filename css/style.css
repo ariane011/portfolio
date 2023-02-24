@@ -91,6 +91,52 @@ header a {
   font-weight: 700;
   font-size: 24px;
 }
+.titulo a {
+  position: absolute;
+  bottom: 25px;
+  background-image: linear-gradient(
+    to right top,
+    #a786d9,
+    #8d91e5,
+    #6f9bec,
+    #4ba3ee,
+    #12abeb
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes btn-pisca {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btn-pisca {
+  background-color: #ce300c;
+  color: #fff;
+  padding: 0.6em 0.8em;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-animation: btn-pisca 0.9s linear infinite;
+  -moz-animation: btn-pisca 0.9s linear infinite;
+  -ms-animation: btn-pisca 0.9s linear infinite;
+  -o-animation: btn-pisca 0.9s linear infinite;
+  animation: btn-pisca 0.9s linear infinite;
+}
+
+.titulo a:hover {
+  color: white;
+}
 
 .perfil img {
   width: 35%;
@@ -304,7 +350,7 @@ hr {
   animation: fade-left 0.7s ease-in;
 }
 
-.active.fade-right.animate {
+.active.fade-right {
   animation: fade-right 0.7s ease-in;
 }
 
@@ -628,4 +674,13 @@ Main components
   justify-content: center;
   align-items: center;
   padding: 2%;
+}
+
+.btn-scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  color: whitesmoke;
+  opacity: 0.6;
+  border-radius: 10px;
 }
